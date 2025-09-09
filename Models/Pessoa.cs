@@ -8,6 +8,7 @@ namespace Explorando.Models
     public class Pessoa
     {
         private string _nome; // Atributo privado
+        private int _idade; // Atributo privado
         public string Nome
         {
             get => _nome.ToUpper(); // Acessor get
@@ -23,7 +24,19 @@ namespace Explorando.Models
                 _nome = value;
             }
         }
-        public int Idade { get; set; }
+        public int Idade
+        {
+            get => _idade;
+            set
+            {
+                if (value < 0)
+                {
+                    throw new ArgumentException("A idade não pode ser negativa.");
+                }
+
+                _idade = value;
+            }
+        }
 
         public void Apresentar()
         {
