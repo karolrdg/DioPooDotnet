@@ -7,7 +7,27 @@ namespace Explorando.Models
 {
     public class Pessoa
     {
-        public string Nome { get; set; }
+        private string _nome; // Atributo privado
+        public string Nome
+        {
+            get => _nome.ToUpper(); // Acessor get
+
+            set
+            {
+
+                if (value == "")
+                {
+                    throw new ArgumentException("O nome não pode ser vazio.");
+                }
+
+                _nome = value;
+            }
+        }
         public int Idade { get; set; }
+
+        public void Apresentar()
+        {
+            Console.WriteLine($"Olá, meu nome é {Nome} e tenho {Idade} anos.");
+        }
     }
 }

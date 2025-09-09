@@ -1,0 +1,15 @@
+C:\Users\user\DIO - CSHARP\Explorando\bin\Debug\net9.0\Explorando.exe
+C:\Users\user\DIO - CSHARP\Explorando\bin\Debug\net9.0\Explorando.deps.json
+C:\Users\user\DIO - CSHARP\Explorando\bin\Debug\net9.0\Explorando.runtimeconfig.json
+C:\Users\user\DIO - CSHARP\Explorando\bin\Debug\net9.0\Explorando.dll
+C:\Users\user\DIO - CSHARP\Explorando\bin\Debug\net9.0\Explorando.pdb
+C:\Users\user\DIO - CSHARP\Explorando\obj\Debug\net9.0\Explorando.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\DIO - CSHARP\Explorando\obj\Debug\net9.0\Explorando.AssemblyInfoInputs.cache
+C:\Users\user\DIO - CSHARP\Explorando\obj\Debug\net9.0\Explorando.AssemblyInfo.cs
+C:\Users\user\DIO - CSHARP\Explorando\obj\Debug\net9.0\Explorando.csproj.CoreCompileInputs.cache
+C:\Users\user\DIO - CSHARP\Explorando\obj\Debug\net9.0\Explorando.sourcelink.json
+C:\Users\user\DIO - CSHARP\Explorando\obj\Debug\net9.0\Explorando.dll
+C:\Users\user\DIO - CSHARP\Explorando\obj\Debug\net9.0\refint\Explorando.dll
+C:\Users\user\DIO - CSHARP\Explorando\obj\Debug\net9.0\Explorando.pdb
+C:\Users\user\DIO - CSHARP\Explorando\obj\Debug\net9.0\Explorando.genruntimeconfig.cache
+C:\Users\user\DIO - CSHARP\Explorando\obj\Debug\net9.0\ref\Explorando.dll
