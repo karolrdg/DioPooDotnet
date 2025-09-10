@@ -10,6 +10,7 @@ namespace Explorando.Models
     {
         private string _nome; // Atributo privado
         private int _idade; // Atributo privado
+        private double _altura; // Atributo privado
         public string Nome
         {
             get => _nome.ToUpper(); // Acessor get
@@ -27,6 +28,7 @@ namespace Explorando.Models
         }
 
         public string Sobrenome { get; set; }
+
         public string NomeCompleto => $"{Nome} {Sobrenome}".ToUpper(); // Propriedade somente leitura (read-only)
 
 
@@ -44,9 +46,23 @@ namespace Explorando.Models
             }
         }
 
+        public double Altura
+        {
+            get => _altura;
+            set
+            {
+                if (value < 0)
+                {
+                    throw new ArgumentException("A altura não pode ser negativa.");
+                }
+
+                _altura = value;
+            }
+        }
+
         public void Apresentar()
         {
-            Console.WriteLine($"Olá, meu nome é {NomeCompleto} e tenho {Idade} anos.");
+            Console.WriteLine($"Nome: {NomeCompleto} | Idade: {Idade} anos | Altura: {Altura}m.");
         }
     }
 }
