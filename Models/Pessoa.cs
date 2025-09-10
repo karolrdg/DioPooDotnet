@@ -8,6 +8,17 @@ namespace Explorando.Models
 {
     public class Pessoa
     {
+        public Pessoa()
+        {
+
+        }
+
+        public Pessoa(string nome, string sobrenome)
+        {
+            Nome = nome;
+            Sobrenome = sobrenome;
+        }
+
         private string _nome; // Atributo privado
         private int _idade; // Atributo privado
         private double _altura; // Atributo privado
