@@ -1,10 +1,35 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Explorando.Models;
 
-decimal valorMonetario = 123456;
 
 
-Console.WriteLine($"{valorMonetario:C}");
+DateTime dataAtual = DateTime.Now;
+Console.WriteLine(dataAtual.ToString("dd/MM/yyyy HH:mm"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// decimal valorMonetario = 123456;
+
+
+// Console.WriteLine($"{valorMonetario:C}");
 
 
 
