@@ -1,18 +1,59 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Explorando.Models;
 
-Pessoa p1 = new Pessoa(nome: "Naruto", sobrenome: "Uzumaki");
-Pessoa p2 = new Pessoa(nome: "Sasuke", sobrenome: "Uchiha");
+decimal valorMonetario = 123456;
 
 
-Curso curso = new Curso();
-curso.Nome = "Curso de C#";
-curso.Alunos = new List<Pessoa>();
+Console.WriteLine($"{valorMonetario:C}");
 
-curso.AddAluno(p1);
-curso.AddAluno(p2);
 
-curso.ListarAlunos();
+
+
+
+
+
+
+
+
+
+// int numero1 = 10;
+// int numero2 = 20;
+
+
+// int resultado = numero1 + numero2;
+
+// Console.WriteLine(resultado);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Pessoa p1 = new Pessoa(nome: "Naruto", sobrenome: "Uzumaki");
+// Pessoa p2 = new Pessoa(nome: "Sasuke", sobrenome: "Uchiha");
+
+
+// Curso curso = new Curso();
+// curso.Nome = "Curso de C#";
+// curso.Alunos = new List<Pessoa>();
+
+// curso.AddAluno(p1);
+// curso.AddAluno(p2);
+
+// curso.ListarAlunos();
 
 
 
