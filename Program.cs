@@ -3,28 +3,81 @@ using Explorando.Models;
 
 try
 {
-    string[] linhas = File.ReadAllLines("Arquivos/arquivoLeiitura.txt");
-
-    foreach (var linha in linhas)
-    {
-        Console.WriteLine(linha);
-    }
-
+    Console.Write("Digite um número: ");
+    int numero = int.Parse(Console.ReadLine()!); // pode gerar erro
+    Console.WriteLine($"Número digitado: {numero}");
 }
-catch (FileNotFoundException ex)
+catch (FormatException)
 {
-    Console.WriteLine("O arquivo não foi encontrado: " + ex.Message);
+    Console.WriteLine("Erro: você não digitou um número válido!");
 }
-catch (DirectoryNotFoundException ex)
+catch (OverflowException)
 {
-    Console.WriteLine("O diretório não foi encontrado: " + ex.Message);
+    Console.WriteLine("Erro: o número digitado é muito grande ou muito pequeno!");
 }
 catch (Exception ex)
 {
-    Console.WriteLine("Ocorreu um erro: " + ex.Message);
+    Console.WriteLine($"Erro genérico: {ex.Message}");
+}
+finally
+{
+    Console.WriteLine("Programa finalizado.");
 }
 
-Console.WriteLine("Hello, World!");
+try
+{
+    Console.Write("Digite sua idade: ");
+    int idade = int.Parse(Console.ReadLine()!); // pode dar erro se digitar "abc"
+    Console.WriteLine($"Sua idade é {idade}");
+}
+catch (FormatException)
+{
+    Console.WriteLine("Erro: você digitou um valor que não é número!");
+}
+
+
+
+
+// try
+// {
+//     string conteudo = File.ReadAllText("clientes.txt");
+//     Console.WriteLine(conteudo);
+// }
+// catch (FileNotFoundException)
+// {
+//     Console.WriteLine("Arquivo de clientes não encontrado. Criando um novo...");
+//     File.WriteAllText("clientes.txt", "ID;Nome;Email"); // Cria arquivo vazio
+// }
+
+
+// try
+// {
+//     string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
+
+//     foreach (var linha in linhas)
+//     {
+//         Console.WriteLine(linha);
+//     }
+
+// }
+// catch (FileNotFoundException ex)
+// {
+//     Console.WriteLine("O arquivo não foi encontrado: " + ex.Message);
+//     // Criar o arquivo q nao existe
+//     File.WriteAllText("Arquivos/arquivoLeiitura.txt", "Arquivo criado em: " + DateTime.Now);
+// }
+// catch (DirectoryNotFoundException ex)
+// {
+//     Console.WriteLine("O diretório não foi encontrado: " + ex.Message);
+// }
+// catch (Exception ex)
+// {
+//     Console.WriteLine("Ocorreu um erro: " + ex.Message);
+// }
+
+// Console.WriteLine("Hello, World!");
+
+
 
 
 
