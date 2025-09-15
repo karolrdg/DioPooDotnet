@@ -1,10 +1,54 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Explorando.Models;
 
+try
+{
+    string[] linhas = File.ReadAllLines("Arquivos/arquivoLeiitura.txt");
+
+    foreach (var linha in linhas)
+    {
+        Console.WriteLine(linha);
+    }
+
+}
+catch (FileNotFoundException ex)
+{
+    Console.WriteLine("O arquivo não foi encontrado: " + ex.Message);
+}
+catch (DirectoryNotFoundException ex)
+{
+    Console.WriteLine("O diretório não foi encontrado: " + ex.Message);
+}
+catch (Exception ex)
+{
+    Console.WriteLine("Ocorreu um erro: " + ex.Message);
+}
+
+Console.WriteLine("Hello, World!");
 
 
-DateTime dataAtual = DateTime.Now;
-Console.WriteLine(dataAtual.ToString("dd/MM/yyyy HH:mm"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// DateTime dataAtual = DateTime.Now;
+// Console.WriteLine(dataAtual.ToString("dd/MM/yyyy HH:mm"));
 
 
 
