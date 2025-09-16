@@ -1,87 +1,107 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Explorando.Models;
+Stack<string> pilha = new Stack<string>();
+pilha.Push("Azul");
+pilha.Push("Verde");
+pilha.Push("Vermelho");
 
-class Program
+foreach (var cor in pilha)
 {
-    static void Main()
-    {
-        Queue<string> filaBanco = new Queue<string>();
-        int opcao = 0;
-
-        do
-        {
-            Console.WriteLine("\n===== Banco C# =====");
-            Console.WriteLine("1 - Adicionar cliente à fila");
-            Console.WriteLine("2 - Atender cliente");
-            Console.WriteLine("3 - Mostrar fila");
-            Console.WriteLine("4 - Ver próximo cliente");
-            Console.WriteLine("0 - Sair");
-            Console.Write("Escolha uma opção: ");
-
-            // Lê a opção digitada
-            int.TryParse(Console.ReadLine(), out opcao);
-
-            Console.WriteLine();
-
-            switch (opcao)
-            {
-                case 1:
-                    Console.Write("Digite o nome do cliente: ");
-                    string nome = Console.ReadLine();
-                    filaBanco.Enqueue(nome);
-                    Console.WriteLine($"✅ Cliente {nome} entrou na fila.");
-                    break;
-
-                case 2:
-                    if (filaBanco.Count > 0)
-                    {
-                        string atendido = filaBanco.Dequeue();
-                        Console.WriteLine($"👩‍💼 Cliente atendido: {atendido}");
-                    }
-                    else
-                    {
-                        Console.WriteLine("⚠️ Nenhum cliente na fila!");
-                    }
-                    break;
-
-                case 3:
-                    if (filaBanco.Count > 0)
-                    {
-                        Console.WriteLine("📋 Clientes na fila:");
-                        foreach (var cliente in filaBanco)
-                        {
-                            Console.WriteLine(cliente);
-                        }
-                    }
-                    else
-                    {
-                        Console.WriteLine("⚠️ A fila está vazia.");
-                    }
-                    break;
-
-                case 4:
-                    if (filaBanco.Count > 0)
-                    {
-                        Console.WriteLine($"👀 Próximo cliente: {filaBanco.Peek()}");
-                    }
-                    else
-                    {
-                        Console.WriteLine("⚠️ Nenhum cliente na fila.");
-                    }
-                    break;
-
-                case 0:
-                    Console.WriteLine("🚪 Encerrando o sistema...");
-                    break;
-
-                default:
-                    Console.WriteLine("❌ Opção inválida, tente novamente!");
-                    break;
-            }
-
-        } while (opcao != 0);
-    }
+    Console.WriteLine(cor);
 }
+Console.WriteLine($"Removendo cor do topo: {pilha.Pop()}");
+
+pilha.Push("Amarelo");
+
+foreach (var cor in pilha)
+{
+    Console.WriteLine(cor);
+}
+
+
+
+
+// class Program
+// {
+//     static void Main()
+//     {
+//         Queue<string> filaBanco = new Queue<string>();
+//         int opcao = 0;
+
+//         do
+//         {
+//             Console.WriteLine("\n===== Banco C# =====");
+//             Console.WriteLine("1 - Adicionar cliente à fila");
+//             Console.WriteLine("2 - Atender cliente");
+//             Console.WriteLine("3 - Mostrar fila");
+//             Console.WriteLine("4 - Ver próximo cliente");
+//             Console.WriteLine("0 - Sair");
+//             Console.Write("Escolha uma opção: ");
+
+//             // Lê a opção digitada
+//             int.TryParse(Console.ReadLine(), out opcao);
+
+//             Console.WriteLine();
+
+//             switch (opcao)
+//             {
+//                 case 1:
+//                     Console.Write("Digite o nome do cliente: ");
+//                     string nome = Console.ReadLine();
+//                     filaBanco.Enqueue(nome);
+//                     Console.WriteLine($"✅ Cliente {nome} entrou na fila.");
+//                     break;
+
+//                 case 2:
+//                     if (filaBanco.Count > 0)
+//                     {
+//                         string atendido = filaBanco.Dequeue();
+//                         Console.WriteLine($"👩‍💼 Cliente atendido: {atendido}");
+//                     }
+//                     else
+//                     {
+//                         Console.WriteLine("⚠️ Nenhum cliente na fila!");
+//                     }
+//                     break;
+
+//                 case 3:
+//                     if (filaBanco.Count > 0)
+//                     {
+//                         Console.WriteLine("📋 Clientes na fila:");
+//                         foreach (var cliente in filaBanco)
+//                         {
+//                             Console.WriteLine(cliente);
+//                         }
+//                     }
+//                     else
+//                     {
+//                         Console.WriteLine("⚠️ A fila está vazia.");
+//                     }
+//                     break;
+
+//                 case 4:
+//                     if (filaBanco.Count > 0)
+//                     {
+//                         Console.WriteLine($"👀 Próximo cliente: {filaBanco.Peek()}");
+//                     }
+//                     else
+//                     {
+//                         Console.WriteLine("⚠️ Nenhum cliente na fila.");
+//                     }
+//                     break;
+
+//                 case 0:
+//                     Console.WriteLine("🚪 Encerrando o sistema...");
+//                     break;
+
+//                 default:
+//                     Console.WriteLine("❌ Opção inválida, tente novamente!");
+//                     break;
+//             }
+
+//         } while (opcao != 0);
+//     }
+
 // class Program
 // {
 //     static void Main()
