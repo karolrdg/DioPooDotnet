@@ -1,7 +1,179 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Explorando.Models;
 
-new ExemploExcecao().Metodo1();
+class Program
+{
+    static void Main()
+    {
+        Queue<string> filaBanco = new Queue<string>();
+        int opcao = 0;
+
+        do
+        {
+            Console.WriteLine("\n===== Banco C# =====");
+            Console.WriteLine("1 - Adicionar cliente à fila");
+            Console.WriteLine("2 - Atender cliente");
+            Console.WriteLine("3 - Mostrar fila");
+            Console.WriteLine("4 - Ver próximo cliente");
+            Console.WriteLine("0 - Sair");
+            Console.Write("Escolha uma opção: ");
+
+            // Lê a opção digitada
+            int.TryParse(Console.ReadLine(), out opcao);
+
+            Console.WriteLine();
+
+            switch (opcao)
+            {
+                case 1:
+                    Console.Write("Digite o nome do cliente: ");
+                    string nome = Console.ReadLine();
+                    filaBanco.Enqueue(nome);
+                    Console.WriteLine($"✅ Cliente {nome} entrou na fila.");
+                    break;
+
+                case 2:
+                    if (filaBanco.Count > 0)
+                    {
+                        string atendido = filaBanco.Dequeue();
+                        Console.WriteLine($"👩‍💼 Cliente atendido: {atendido}");
+                    }
+                    else
+                    {
+                        Console.WriteLine("⚠️ Nenhum cliente na fila!");
+                    }
+                    break;
+
+                case 3:
+                    if (filaBanco.Count > 0)
+                    {
+                        Console.WriteLine("📋 Clientes na fila:");
+                        foreach (var cliente in filaBanco)
+                        {
+                            Console.WriteLine(cliente);
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("⚠️ A fila está vazia.");
+                    }
+                    break;
+
+                case 4:
+                    if (filaBanco.Count > 0)
+                    {
+                        Console.WriteLine($"👀 Próximo cliente: {filaBanco.Peek()}");
+                    }
+                    else
+                    {
+                        Console.WriteLine("⚠️ Nenhum cliente na fila.");
+                    }
+                    break;
+
+                case 0:
+                    Console.WriteLine("🚪 Encerrando o sistema...");
+                    break;
+
+                default:
+                    Console.WriteLine("❌ Opção inválida, tente novamente!");
+                    break;
+            }
+
+        } while (opcao != 0);
+    }
+}
+// class Program
+// {
+//     static void Main()
+//     {
+//         Queue<string> filaBanco = new Queue<string>();
+
+//         // Clientes chegam
+//         filaBanco.Enqueue("João");
+//         filaBanco.Enqueue("Maria");
+//         filaBanco.Enqueue("Carlos");
+//         filaBanco.Enqueue("Ana");
+
+//         Console.WriteLine("Fila inicial de clientes:");
+//         foreach (var cliente in filaBanco)
+//         {
+//             Console.WriteLine(cliente);
+//         }
+
+//         Console.WriteLine("\nAtendimento começa...");
+
+//         // Atender primeiro cliente
+//         Console.WriteLine($"Chamando: {filaBanco.Dequeue()}");
+
+//         // Mostrar quem é o próximo
+//         Console.WriteLine($"Próximo da fila: {filaBanco.Peek()}");
+
+//         // Novo cliente entra na fila
+//         filaBanco.Enqueue("Fernanda");
+
+//         Console.WriteLine("\nFila atualizada:");
+//         foreach (var cliente in filaBanco)
+//         {
+//             Console.WriteLine(cliente);
+//         }
+
+//         // Quantos clientes ainda faltam
+//         Console.WriteLine($"\nClientes restantes na fila: {filaBanco.Count}");
+//     }
+// }
+
+
+
+
+
+// Queue<string> fila = new Queue<string>();
+// fila.Enqueue("Azul");
+// fila.Enqueue("Verde");
+// fila.Enqueue("Amarelo");
+// fila.Enqueue("Vermelho");
+// fila.Enqueue("Laranja");
+// fila.Enqueue("Roxo");
+
+
+// foreach (var item in fila)
+// {
+//     Console.WriteLine(item);
+// }
+
+// Console.WriteLine($"Removendo o primeiro elemento da fila: {fila.Dequeue()}");
+// fila.Enqueue("Rosa");
+
+// foreach (var item in fila)
+// {
+//     Console.WriteLine(item);
+// }
+// Console.WriteLine($"Primeiro elemento da fila: {fila.Peek()}");
+// Console.WriteLine($"Quantidade de elementos na fila: {fila.Count}");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// new ExemploExcecao().Metodo1();
 
 
 // try
