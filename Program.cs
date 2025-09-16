@@ -1,39 +1,42 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Explorando.Models;
 
-try
-{
-    Console.Write("Digite um número: ");
-    int numero = int.Parse(Console.ReadLine()!); // pode gerar erro
-    Console.WriteLine($"Número digitado: {numero}");
-}
-catch (FormatException)
-{
-    Console.WriteLine("Erro: você não digitou um número válido!");
-}
-catch (OverflowException)
-{
-    Console.WriteLine("Erro: o número digitado é muito grande ou muito pequeno!");
-}
-catch (Exception ex)
-{
-    Console.WriteLine($"Erro genérico: {ex.Message}");
-}
-finally
-{
-    Console.WriteLine("Programa finalizado.");
-}
+new ExemploExcecao().Metodo1();
 
-try
-{
-    Console.Write("Digite sua idade: ");
-    int idade = int.Parse(Console.ReadLine()!); // pode dar erro se digitar "abc"
-    Console.WriteLine($"Sua idade é {idade}");
-}
-catch (FormatException)
-{
-    Console.WriteLine("Erro: você digitou um valor que não é número!");
-}
+
+// try
+// {
+//     Console.Write("Digite um número: ");
+//     int numero = int.Parse(Console.ReadLine()!); // pode gerar erro
+//     Console.WriteLine($"Número digitado: {numero}");
+// }
+// catch (FormatException)
+// {
+//     Console.WriteLine("Erro: você não digitou um número válido!");
+// }
+// catch (OverflowException)
+// {
+//     Console.WriteLine("Erro: o número digitado é muito grande ou muito pequeno!");
+// }
+// catch (Exception ex)
+// {
+//     Console.WriteLine($"Erro genérico: {ex.Message}");
+// }
+// finally
+// {
+//     Console.WriteLine("Programa finalizado.");
+// }
+
+// try
+// {
+//     Console.Write("Digite sua idade: ");
+//     int idade = int.Parse(Console.ReadLine()!); // pode dar erro se digitar "abc"
+//     Console.WriteLine($"Sua idade é {idade}");
+// }
+// catch (FormatException)
+// {
+//     Console.WriteLine("Erro: você digitou um valor que não é número!");
+// }
 
 
 
