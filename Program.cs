@@ -1,22 +1,37 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Explorando.Models;
-Stack<string> pilha = new Stack<string>();
-pilha.Push("Azul");
-pilha.Push("Verde");
-pilha.Push("Vermelho");
 
-foreach (var cor in pilha)
+Dictionary<string, string> estados = new Dictionary<string, string>();
+estados.Add("SP", "São Paulo");
+estados.Add("RJ", "Rio de Janeiro");
+estados.Add("MG", "Minas Gerais");
+estados.Add("ES", "Espirito Santo");
+estados.Add("BA", "Bahia");
+
+foreach (var item in estados)
 {
-    Console.WriteLine(cor);
+    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
 }
-Console.WriteLine($"Removendo cor do topo: {pilha.Pop()}");
 
-pilha.Push("Amarelo");
 
-foreach (var cor in pilha)
-{
-    Console.WriteLine(cor);
-}
+
+// Stack<string> pilha = new Stack<string>();
+// pilha.Push("Azul");
+// pilha.Push("Verde");
+// pilha.Push("Vermelho");
+
+// foreach (var cor in pilha)
+// {
+//     Console.WriteLine(cor);
+// }
+// Console.WriteLine($"Removendo cor do topo: {pilha.Pop()}");
+
+// pilha.Push("Amarelo");
+
+// foreach (var cor in pilha)
+// {
+//     Console.WriteLine(cor);
+// }
 
 
 
