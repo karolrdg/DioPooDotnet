@@ -1,16 +1,55 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Explorando.Models;
 
-(int Id, string Nome, string Sobrenome) tupla = (1, "Naruto", "Uzumaki");
-
-ValueTuple<int, string, string> tupla2 = (2, "Sasuke", "Uchiha");
-var tupla2Ex = Tuple.Create(2, "Sasuke", "Uchiha");
+Pessoa pessoa = new Pessoa("Naruto", "Uzumaki");
 
 
-Console.WriteLine($"Id: {tupla.Id}, Nome: {tupla.Nome}, Sobrenome: {tupla.Sobrenome}");
+(string nome, string sobrenome) = pessoa;
+
+Console.WriteLine($"Nome: {nome}, Sobrenome: {sobrenome}");
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// LeituraArquivos leitura = new LeituraArquivos();
+// var (sucesso, linhas, _) = leitura.LerArquivos("Arquivos/arquivoLeitura.txt");
+
+// if (sucesso)
+// {
+//     // Console.WriteLine($"Quantidade de linhas: {quantidadeLinhas}");
+//     foreach (var linha in linhas)
+//     {
+//         Console.WriteLine(linha);
+//     }
+// }
+// else
+// {
+//     Console.WriteLine("Não foi possível ler o arquivo.");
+// }
+
+
+
+// (int Id, string Nome, string Sobrenome) tupla = (1, "Naruto", "Uzumaki");
+
+// ValueTuple<int, string, string> tupla2 = (2, "Sasuke", "Uchiha");
+// var tupla2Ex = Tuple.Create(2, "Sasuke", "Uchiha");
+
+
+// Console.WriteLine($"Id: {tupla.Id}, Nome: {tupla.Nome}, Sobrenome: {tupla.Sobrenome}");
 
 
 

@@ -19,6 +19,12 @@ namespace Explorando.Models
             Sobrenome = sobrenome;
         }
 
+        public void Deconstruct(out string nome, out string sobrenome)
+        {
+            nome = Nome;
+            sobrenome = Sobrenome;
+        }
+
         private string _nome; // Atributo privado
         private int _idade; // Atributo privado
         private double _altura; // Atributo privado
