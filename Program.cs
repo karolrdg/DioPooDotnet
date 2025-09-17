@@ -1,19 +1,30 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Explorando.Models;
 
-Dictionary<string, string> estados = new Dictionary<string, string>();
-estados.Add("SP", "São Paulo");
-estados.Add("RJ", "Rio de Janeiro");
-estados.Add("MG", "Minas Gerais");
-estados.Add("ES", "Espirito Santo");
-estados.Add("BA", "Bahia");
+(int Id, string Nome, string Sobrenome) tupla = (1, "Naruto", "Uzumaki");
 
-foreach (var item in estados)
-{
-    Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
-}
+ValueTuple<int, string, string> tupla2 = (2, "Sasuke", "Uchiha");
+var tupla2Ex = Tuple.Create(2, "Sasuke", "Uchiha");
 
 
+Console.WriteLine($"Id: {tupla.Id}, Nome: {tupla.Nome}, Sobrenome: {tupla.Sobrenome}");
+
+
+
+
+
+
+// Dictionary<string, string> estados = new Dictionary<string, string>();
+// estados.Add("SP", "São Paulo");
+// estados.Add("RJ", "Rio de Janeiro");
+// estados.Add("MG", "Minas Gerais");
+// estados.Add("ES", "Espirito Santo");
+// estados.Add("BA", "Bahia");
+
+// foreach (var item in estados)
+// {
+//     Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+// }
 
 // Stack<string> pilha = new Stack<string>();
 // pilha.Push("Azul");
