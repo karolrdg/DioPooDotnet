@@ -1,14 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Explorando.Models;
+using Newtonsoft.Json;
 
-Pessoa pessoa = new Pessoa("Naruto", "Uzumaki");
+Venda vendaProduto = new Venda(1, "Camiseta", 29.99M, 3);
 
+string vendaJson = JsonConvert.SerializeObject(vendaProduto, Formatting.Indented);
 
-(string nome, string sobrenome) = pessoa;
-
-Console.WriteLine($"Nome: {nome}, Sobrenome: {sobrenome}");
-
-
+Console.WriteLine(vendaJson);
 
 
 
@@ -18,11 +16,12 @@ Console.WriteLine($"Nome: {nome}, Sobrenome: {sobrenome}");
 
 
 
+// Pessoa pessoa = new Pessoa("Naruto", "Uzumaki");
 
 
+// (string nome, string sobrenome) = pessoa;
 
-
-
+// Console.WriteLine($"Nome: {nome}, Sobrenome: {sobrenome}");
 
 
 // LeituraArquivos leitura = new LeituraArquivos();

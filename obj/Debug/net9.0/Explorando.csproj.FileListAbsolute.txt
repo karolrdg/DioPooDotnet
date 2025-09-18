@@ -13,3 +13,6 @@ C:\Users\user\DIO - CSHARP\Explorando\obj\Debug\net9.0\refint\Explorando.dll
 C:\Users\user\DIO - CSHARP\Explorando\obj\Debug\net9.0\Explorando.pdb
 C:\Users\user\DIO - CSHARP\Explorando\obj\Debug\net9.0\Explorando.genruntimeconfig.cache
 C:\Users\user\DIO - CSHARP\Explorando\obj\Debug\net9.0\ref\Explorando.dll
+C:\Users\user\DIO - CSHARP\Explorando\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Users\user\DIO - CSHARP\Explorando\obj\Debug\net9.0\Explorando.csproj.AssemblyReference.cache
+C:\Users\user\DIO - CSHARP\Explorando\obj\Debug\net9.0\Explorando.csproj.Up2Date
