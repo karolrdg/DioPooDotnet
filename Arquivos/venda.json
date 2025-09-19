@@ -1,0 +1,26 @@
+[
+  {
+    "Id": 1,
+    "Produto": "Camiseta",
+    "Preco": 29.99,
+    "Quantidade": 3,
+    "Tamanho": "M",
+    "DataVenda": "2025-09-19T18:09:23.7215666-03:00"
+  },
+  {
+    "Id": 2,
+    "Produto": "Corte de cabelo",
+    "Preco": 59.99,
+    "Quantidade": 1,
+    "Tamanho": "N/A",
+    "DataVenda": "2025-09-19T18:09:23.7215666-03:00"
+  },
+  {
+    "Id": 3,
+    "Produto": "Calça Jeans",
+    "Preco": 120.00,
+    "Quantidade": 2,
+    "Tamanho": "42",
+    "DataVenda": "2025-09-19T18:09:23.7215666-03:00"
+  }
+]
