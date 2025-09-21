@@ -2,23 +2,39 @@
 using Explorando.Models;
 using Newtonsoft.Json;
 
-DateTime dataVenda = DateTime.Now;
+List<Carro> listaCarros = new List<Carro>();
+Carro carro1 = new Carro(1, "Toyota", "Corolla", 2019, 90.99M);
+Carro carro2 = new Carro(1, "Chevrolet", "Prisma", 2019, 60.99M);
 
-List<Venda> listaVendas = new List<Venda>();
+listaCarros.Add(carro1);
+listaCarros.Add(carro2);
 
-Venda vendaProduto = new Venda(1, "Camiseta", 29.99M, 3, "M", dataVenda);
-Venda vendaServico = new Venda(2, "Corte de cabelo", 59.99M, 1, "N/A", dataVenda);
-Venda vendaProduto2 = new Venda(3, "Calça Jeans", 120.00M, 2, "42", dataVenda);
-
-listaVendas.Add(vendaProduto);
-listaVendas.Add(vendaServico);
-listaVendas.Add(vendaProduto2);
-
-string vendaJson = JsonConvert.SerializeObject(listaVendas, Formatting.Indented);
+string vendaJson = JsonConvert.SerializeObject(listaCarros, Formatting.Indented);
 
 Console.WriteLine(vendaJson);
 
-File.WriteAllText("Arquivos/venda.json", vendaJson);
+
+File.WriteAllText("Arquivos/carros.json", vendaJson);
+
+
+
+// DateTime dataVenda = DateTime.Now;
+
+// List<Venda> listaVendas = new List<Venda>();
+
+// Venda vendaProduto = new Venda(1, "Camiseta", 29.99M, 3, "M", dataVenda);
+// Venda vendaServico = new Venda(2, "Corte de cabelo", 59.99M, 1, "N/A", dataVenda);
+// Venda vendaProduto2 = new Venda(3, "Calça Jeans", 120.00M, 2, "42", dataVenda);
+
+// listaVendas.Add(vendaProduto);
+// listaVendas.Add(vendaServico);
+// listaVendas.Add(vendaProduto2);
+
+// string vendaJson = JsonConvert.SerializeObject(listaVendas, Formatting.Indented);
+
+// Console.WriteLine(vendaJson);
+
+// File.WriteAllText("Arquivos/venda.json", vendaJson);
 
 
 

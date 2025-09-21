@@ -1,0 +1,16 @@
+[
+  {
+    "Id": 1,
+    "Marca": "Toyota",
+    "Modelo": "Corolla",
+    "Ano": 2019,
+    "Preco": 90.99
+  },
+  {
+    "Id": 1,
+    "Marca": "Chevrolet",
+    "Modelo": "Prisma",
+    "Ano": 2019,
+    "Preco": 60.99
+  }
+]
