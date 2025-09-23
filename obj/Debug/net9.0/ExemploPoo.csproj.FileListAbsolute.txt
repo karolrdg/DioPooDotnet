@@ -1,0 +1,14 @@
+C:\Users\user\DIO - CSHARP\ExemploPoo\bin\Debug\net9.0\ExemploPoo.exe
+C:\Users\user\DIO - CSHARP\ExemploPoo\bin\Debug\net9.0\ExemploPoo.deps.json
+C:\Users\user\DIO - CSHARP\ExemploPoo\bin\Debug\net9.0\ExemploPoo.runtimeconfig.json
+C:\Users\user\DIO - CSHARP\ExemploPoo\bin\Debug\net9.0\ExemploPoo.dll
+C:\Users\user\DIO - CSHARP\ExemploPoo\bin\Debug\net9.0\ExemploPoo.pdb
+C:\Users\user\DIO - CSHARP\ExemploPoo\obj\Debug\net9.0\ExemploPoo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\DIO - CSHARP\ExemploPoo\obj\Debug\net9.0\ExemploPoo.AssemblyInfoInputs.cache
+C:\Users\user\DIO - CSHARP\ExemploPoo\obj\Debug\net9.0\ExemploPoo.AssemblyInfo.cs
+C:\Users\user\DIO - CSHARP\ExemploPoo\obj\Debug\net9.0\ExemploPoo.csproj.CoreCompileInputs.cache
+C:\Users\user\DIO - CSHARP\ExemploPoo\obj\Debug\net9.0\ExemploPoo.dll
+C:\Users\user\DIO - CSHARP\ExemploPoo\obj\Debug\net9.0\refint\ExemploPoo.dll
+C:\Users\user\DIO - CSHARP\ExemploPoo\obj\Debug\net9.0\ExemploPoo.pdb
+C:\Users\user\DIO - CSHARP\ExemploPoo\obj\Debug\net9.0\ExemploPoo.genruntimeconfig.cache
+C:\Users\user\DIO - CSHARP\ExemploPoo\obj\Debug\net9.0\ref\ExemploPoo.dll
