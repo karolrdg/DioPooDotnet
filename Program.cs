@@ -4,7 +4,7 @@
 
 ContaCorrente conta = new ContaCorrente(12345, 1000);
 conta.ExibirSaldo();
-conta.Sacar(2000);
+conta.Sacar(200);
 conta.ExibirSaldo();
 
 
